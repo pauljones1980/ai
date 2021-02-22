@@ -1,0 +1,105 @@
+{
+ "metadata": {
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.7.3-final"
+  },
+  "orig_nbformat": 2,
+  "kernelspec": {
+   "name": "python3",
+   "display_name": "Python 3.7.3 32-bit",
+   "metadata": {
+    "interpreter": {
+     "hash": "31f2aee4e71d21fbe5cf8b01ff0e069b9275f58929596ceb00d14d90e3e16cd6"
+    }
+   }
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 2,
+ "cells": [
+  {
+   "cell_type": "code",
+   "execution_count": 13,
+   "metadata": {},
+   "outputs": [
+    {
+     "output_type": "stream",
+     "name": "stdout",
+     "text": [
+      "Looking in indexes: https://pypi.org/simple, https://www.piwheels.org/simple\n",
+      "Collecting pyrealsense2\n",
+      "\u001b[31m  Could not find a version that satisfies the requirement pyrealsense2 (from versions: )\u001b[0m\n",
+      "\u001b[31mNo matching distribution found for pyrealsense2\u001b[0m\n",
+      "SDK + Sample Data Deployed\n",
+      "/usr/bin/python3\n"
+     ]
+    }
+   ],
+   "source": [
+    "#install stuff\n",
+    "#!sudo apt-get -q install -y libusb-1.0.0-dev\n",
+    "!pip3 install pyrealsense2\n",
+    "#!wget -N http://realsense-hw-public.s3.amazonaws.com/rs-tests/TestData/object_detection.bag\n",
+    "print(\"SDK + Sample Data Deployed\")\n",
+    "!which python3"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 30,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "import cv2\n",
+    "import numpy as np\n",
+    "import matplotlib.pyplot as plt\n",
+    "import pyrealsense2 as rs\n",
+    "#print(\"Time to rock and roll\")"
+   ]
+  },
+  {
+   "source": [
+    "Open .bag file and capture set of frames"
+   ],
+   "cell_type": "markdown",
+   "metadata": {}
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 6,
+   "metadata": {},
+   "outputs": [
+    {
+     "output_type": "error",
+     "ename": "AttributeError",
+     "evalue": "module 'pyrealsense2' has no attribute 'pipeline'",
+     "traceback": [
+      "\u001b[0;31m---------------------------------------------------------------------------\u001b[0m",
+      "\u001b[0;31mAttributeError\u001b[0m                            Traceback (most recent call last)",
+      "\u001b[0;32m<ipython-input-6-22d273a3d029>\u001b[0m in \u001b[0;36m<module>\u001b[0;34m\u001b[0m\n\u001b[0;32m----> 1\u001b[0;31m \u001b[0mpipe\u001b[0m \u001b[0;34m=\u001b[0m \u001b[0mrs\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mpipeline\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m",
+      "\u001b[0;31mAttributeError\u001b[0m: module 'pyrealsense2' has no attribute 'pipeline'"
+     ]
+    }
+   ],
+   "source": [
+    "pipe = rs\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  }
+ ]
+}
